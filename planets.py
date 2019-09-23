@@ -5,22 +5,14 @@ def weight_on_planets():
     
     #First prompt for user input
     weight = input('What do you weigh on earth? ')
-       
-    while (clear == False):
-        
-        #Loop to disallow program from continuing if user input is a non-numerical answer
-        while True:
-            try:
-                test = int(weight)
-                break
-            except ValueError:
-               weight = input('What do you weigh on earth? ')
-            
+    
+    #While loop that continues while user input is negative, 0, or blank
+    while (clear == False):  
         #If statement to disallow program from continuing if user input is not at least 1
-        if ('-' in weight or weight == '0'):
+        if ('-' in weight or weight == '0' or weight == ''):
             weight = input('What do you weigh on earth? ')
         else:
-            clear = True
+            clear = True    
     
     #Casting new variable as float value of user input
     space_weight = float(weight)
