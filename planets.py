@@ -1,6 +1,6 @@
 def weight_on_planets():
 
-    #Boolean to indicate whether the user input is valid
+    #Boolean 'clear' to indicate whether the user input is valid
     clear = False
     
     #First prompt for user input
